@@ -1,11 +1,24 @@
 package com.tom;
 
-import java.util.Random;
 
+/*建構子整副牌*/
 public class PokerGame {
 
 	public static void main(String[] args) {
-		Random random= new Random();
+		/*整副牌在NewBoxCard*/
+		Poker poker= new Poker();
+		poker.shuffle();
+		poker.print();
+		/*Card  card = new Card();
+		card.print();*/
+		/*int[] n= new int[10];		
+		Card[] c = new Card[10];
+		System.out.println(n[0]);
+		c[0] = new Card(7);
+		System.out.print(c[0].get());*/
+		
+		
+		/*Random random= new Random();
 		int num1 =random.nextInt(52)+1;
 		int flower = num1 % 13 ;
 		int label   = num1 /13  ;
@@ -15,7 +28,7 @@ public class PokerGame {
 	    for (int i=0;i<= 4 ;i++){
 	    	System.out.println(i);
 	    	System.out.print(flowers[i]);
-	    }
+	    }*/
 	   
 		
 		/*int flower5 = random.nextInt(4);
